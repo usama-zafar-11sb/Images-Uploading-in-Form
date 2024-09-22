@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Upload Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="upload-container">
+      <h1>Upload Image</h1>
+      <form id="upload-form">
+        <input
+          type="file"
+          id="image-input"
+          accept="image/*"
+          onchange="previewImage()"
+        />
+        <div class="image-preview" id="image-preview">
+          <img
+            id="preview-img"
+            src=""
+            alt="Image Preview"
+            style="display: none"
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
